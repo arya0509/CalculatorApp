@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <ScrollView>
+
+        <Grid ColumnSpacing="20" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"  ></RowDefinition>
+                <RowDefinition Height="auto" ></RowDefinition>
+                <RowDefinition Height="auto" ></RowDefinition>
+                <RowDefinition Height="auto" ></RowDefinition>
+                <RowDefinition Height="auto" ></RowDefinition>
+                <RowDefinition Height="auto" ></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions  >
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Label x:Name="label" Grid.Row="0" Background="White" Grid.ColumnSpan="4" Text="" TextColor="Black"></Label>
+            
+           
+            <Button x:Name="AC" Text="AC" Background="Gray" Grid.Row="1" Grid.Column="0" Clicked="AC_Clicked"></Button>
+            <Button x:Name="PlusOrMinus" Text="+/-" Background="Gray" Grid.Row="1" Grid.Column="1" Clicked="PlusOrMinus_Clicked"></Button>
+            <Button x:Name="Percentage" Text="%" Background="Gray" Grid.Row="1" Grid.Column="2" Clicked="Percentage_Clicked"></Button>
+            <Button x:Name="Divisionoperation" Text="/" Background="Orange" Grid.Row="1" Grid.Column="3" Clicked="number_Clicked"></Button>
+
+            <Button x:Name="number7" Text="7" Background="Gray"  Grid.Row="2" Grid.Column="0" Clicked="number_Clicked"></Button>
+            <Button x:Name="number8" Text="8" Background="Gray" Grid.Row="2" Grid.Column="1" Clicked="number_Clicked"></Button>
+            <Button x:Name="number9" Text="9" Background="Gray" Grid.Row="2" Grid.Column="2" Clicked="number_Clicked"></Button>
+            <Button x:Name="Plusoperation"  Text="+" Background="Orange" Grid.Row="2" Grid.Column="3" Clicked="number_Clicked"></Button>
+
+            <Button x:Name="number4" Text="4" Background="Gray" Grid.Row="3" Grid.Column="0" Clicked="number_Clicked"></Button>
+            <Button x:Name="number5" Text="5" Background="Gray" Grid.Row="3" Grid.Column="1" Clicked="number_Clicked"></Button>
+            <Button x:Name="number6" Text="6" Background="Gray" Grid.Row="3" Grid.Column="2" Clicked="number_Clicked"></Button>
+            <Button x:Name="Minusoperation" Text="-" Background="Orange" Grid.Row="3" Grid.Column="3" Clicked="number_Clicked"></Button>
+
+            <Button x:Name="number1" Text="1" Background="Gray" Grid.Row="4" Grid.Column="0" Clicked="number_Clicked"></Button>
+            <Button x:Name="number2" Text="2" Background="Gray"  Grid.Row="4" Grid.Column="1" Clicked="number_Clicked"></Button>
+            <Button x:Name="number3" Text="3" Background="Gray"  Grid.Row="4" Grid.Column="2" Clicked="number_Clicked"></Button>
+            <Button x:Name="Multiplyoperation" Text="*" Background="Orange"  Grid.Row="4" Grid.Column="3" Clicked="number_Clicked"></Button>
+
+            <Button x:Name="number0" Text="0" Background="Gray"  Grid.Row="5" Grid.ColumnSpan="2" Clicked="number_Clicked"></Button>
+            <Button x:Name="dot" Text="." Background="Gray"  Grid.Row="5" Grid.Column="2" Clicked="dot_Clicked"></Button>
+            <Button x:Name="Equaloperation" Text="=" Background="Orange"  Grid.Row="5" Grid.Column="3" Clicked="number_Clicked"></Button>
+    </Grid>
+    </ScrollView>
+
+</ContentPage>
